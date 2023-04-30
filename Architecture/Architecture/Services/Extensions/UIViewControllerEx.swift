@@ -8,8 +8,14 @@
 
 import UIKit
 
+typealias SuccessHandler = (Bool) -> ()
+
 extension UIViewController: UIGestureRecognizerDelegate {}
 extension UIViewController {
+    
+    @objc func loadMore(_ block: @escaping SuccessHandler) {}
+
+    @objc func refreshData(_ block: @escaping SuccessHandler) {}
     
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))

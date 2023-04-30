@@ -14,6 +14,41 @@
 		CE58254029FE54D400B3B395 /* AKLocaleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58253F29FE54D400B3B395 /* AKLocaleManager.swift */; };
 		CE58254229FE55B700B3B395 /* AKLocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58254129FE55B700B3B395 /* AKLocalizedString.swift */; };
 		CE58254429FE580500B3B395 /* AKLocalizedTextsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58254329FE580500B3B395 /* AKLocalizedTextsViewModel.swift */; };
+		CE58254729FE5EB200B3B395 /* AKRouterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58254629FE5EB200B3B395 /* AKRouterModel.swift */; };
+		CE58254929FE5FC400B3B395 /* AKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58254829FE5FC400B3B395 /* AKNavigationController.swift */; };
+		CE58254C29FE607D00B3B395 /* AKLightStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58254B29FE607D00B3B395 /* AKLightStyleViewController.swift */; };
+		CE58254E29FE608D00B3B395 /* AKDarkStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58254D29FE608D00B3B395 /* AKDarkStyleViewController.swift */; };
+		CE58255029FE609D00B3B395 /* AKNotificatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58254F29FE609D00B3B395 /* AKNotificatedViewController.swift */; };
+		CE58255229FE619D00B3B395 /* AKContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58255129FE619D00B3B395 /* AKContainerViewController.swift */; };
+		CE58255429FE633B00B3B395 /* AKTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58255329FE633B00B3B395 /* AKTabbarController.swift */; };
+		CE58255629FE642600B3B395 /* AKSounder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58255529FE642600B3B395 /* AKSounder.swift */; };
+		CE58255B29FE657600B3B395 /* AKTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE58255929FE657600B3B395 /* AKTabBar.xib */; };
+		CE58255C29FE657600B3B395 /* AKTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58255A29FE657600B3B395 /* AKTabBar.swift */; };
+		CE58256129FE6B0100B3B395 /* SimpleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58255E29FE6B0100B3B395 /* SimpleAnimation.swift */; };
+		CE58256229FE6B0100B3B395 /* TabBarAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58255F29FE6B0100B3B395 /* TabBarAnimation.swift */; };
+		CE58256329FE6B0100B3B395 /* CircularAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58256029FE6B0100B3B395 /* CircularAnimation.swift */; };
+		CE58256629FE6C0A00B3B395 /* AKVibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58256529FE6C0A00B3B395 /* AKVibration.swift */; };
+		CE58256829FE6E0E00B3B395 /* UIScrollViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58256729FE6E0E00B3B395 /* UIScrollViewEx.swift */; };
+		CE58256E29FE6F6400B3B395 /* AKCollectionConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58256A29FE6F6300B3B395 /* AKCollectionConstructor.swift */; };
+		CE58256F29FE6F6400B3B395 /* AKTableConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58256B29FE6F6300B3B395 /* AKTableConstructor.swift */; };
+		CE58257029FE6F6400B3B395 /* AKConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58256C29FE6F6300B3B395 /* AKConstructor.swift */; };
+		CE58257129FE6F6400B3B395 /* AKConstructorDeafults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58256D29FE6F6300B3B395 /* AKConstructorDeafults.swift */; };
+		CE58257329FE763F00B3B395 /* UITableViewCellEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58257229FE763F00B3B395 /* UITableViewCellEx.swift */; };
+		CE58257529FE76B500B3B395 /* UICollectionViewCellEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58257429FE76B500B3B395 /* UICollectionViewCellEx.swift */; };
+		CE58257729FE770C00B3B395 /* AKValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58257629FE770C00B3B395 /* AKValidator.swift */; };
+		CE58257929FE772400B3B395 /* AKFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58257829FE772400B3B395 /* AKFormatter.swift */; };
+		CE58257C29FE7D9C00B3B395 /* AKHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58257B29FE7D9C00B3B395 /* AKHeader.swift */; };
+		CE58258A29FE7E9F00B3B395 /* AlignmentHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE58257F29FE7E9E00B3B395 /* AlignmentHeader.xib */; };
+		CE58258C29FE7E9F00B3B395 /* CollectionTitledHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE58258129FE7E9E00B3B395 /* CollectionTitledHeader.xib */; };
+		CE58258D29FE7E9F00B3B395 /* EmptyHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE58258229FE7E9F00B3B395 /* EmptyHeader.xib */; };
+		CE58258F29FE7E9F00B3B395 /* ButtonHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE58258429FE7E9F00B3B395 /* ButtonHeader.xib */; };
+		CE58259129FE7E9F00B3B395 /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE58258629FE7E9F00B3B395 /* Header.xib */; };
+		CE58259329FE7E9F00B3B395 /* SeparatorHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE58258829FE7E9F00B3B395 /* SeparatorHeader.xib */; };
+		CE58259529FE863800B3B395 /* UITableViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58259429FE863800B3B395 /* UITableViewEx.swift */; };
+		CE58259729FE866600B3B395 /* UICollectionViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58259629FE866600B3B395 /* UICollectionViewEx.swift */; };
+		CE58259929FE873D00B3B395 /* AKConstraintBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58259829FE873D00B3B395 /* AKConstraintBuilder.swift */; };
+		CE58259B29FE892F00B3B395 /* AKAnimatedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58259A29FE892F00B3B395 /* AKAnimatedHeaderView.swift */; };
+		CE58259D29FE89FB00B3B395 /* CAShapeLayerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58259C29FE89FB00B3B395 /* CAShapeLayerEx.swift */; };
 		CEB3FC5C29F3D6ED00F5623B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FC5B29F3D6ED00F5623B /* AppDelegate.swift */; };
 		CEB3FC5E29F3D6ED00F5623B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FC5D29F3D6ED00F5623B /* SceneDelegate.swift */; };
 		CEB3FC6029F3D6ED00F5623B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FC5F29F3D6ED00F5623B /* ViewController.swift */; };
@@ -83,6 +118,41 @@
 		CE58253F29FE54D400B3B395 /* AKLocaleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLocaleManager.swift; sourceTree = "<group>"; };
 		CE58254129FE55B700B3B395 /* AKLocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLocalizedString.swift; sourceTree = "<group>"; };
 		CE58254329FE580500B3B395 /* AKLocalizedTextsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLocalizedTextsViewModel.swift; sourceTree = "<group>"; };
+		CE58254629FE5EB200B3B395 /* AKRouterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKRouterModel.swift; sourceTree = "<group>"; };
+		CE58254829FE5FC400B3B395 /* AKNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKNavigationController.swift; sourceTree = "<group>"; };
+		CE58254B29FE607D00B3B395 /* AKLightStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLightStyleViewController.swift; sourceTree = "<group>"; };
+		CE58254D29FE608D00B3B395 /* AKDarkStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKDarkStyleViewController.swift; sourceTree = "<group>"; };
+		CE58254F29FE609D00B3B395 /* AKNotificatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKNotificatedViewController.swift; sourceTree = "<group>"; };
+		CE58255129FE619D00B3B395 /* AKContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKContainerViewController.swift; sourceTree = "<group>"; };
+		CE58255329FE633B00B3B395 /* AKTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKTabbarController.swift; sourceTree = "<group>"; };
+		CE58255529FE642600B3B395 /* AKSounder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKSounder.swift; sourceTree = "<group>"; };
+		CE58255929FE657600B3B395 /* AKTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKTabBar.xib; sourceTree = "<group>"; };
+		CE58255A29FE657600B3B395 /* AKTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKTabBar.swift; sourceTree = "<group>"; };
+		CE58255E29FE6B0100B3B395 /* SimpleAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAnimation.swift; sourceTree = "<group>"; };
+		CE58255F29FE6B0100B3B395 /* TabBarAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarAnimation.swift; sourceTree = "<group>"; };
+		CE58256029FE6B0100B3B395 /* CircularAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularAnimation.swift; sourceTree = "<group>"; };
+		CE58256529FE6C0A00B3B395 /* AKVibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKVibration.swift; sourceTree = "<group>"; };
+		CE58256729FE6E0E00B3B395 /* UIScrollViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewEx.swift; sourceTree = "<group>"; };
+		CE58256A29FE6F6300B3B395 /* AKCollectionConstructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKCollectionConstructor.swift; sourceTree = "<group>"; };
+		CE58256B29FE6F6300B3B395 /* AKTableConstructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKTableConstructor.swift; sourceTree = "<group>"; };
+		CE58256C29FE6F6300B3B395 /* AKConstructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKConstructor.swift; sourceTree = "<group>"; };
+		CE58256D29FE6F6300B3B395 /* AKConstructorDeafults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKConstructorDeafults.swift; sourceTree = "<group>"; };
+		CE58257229FE763F00B3B395 /* UITableViewCellEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellEx.swift; sourceTree = "<group>"; };
+		CE58257429FE76B500B3B395 /* UICollectionViewCellEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellEx.swift; sourceTree = "<group>"; };
+		CE58257629FE770C00B3B395 /* AKValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKValidator.swift; sourceTree = "<group>"; };
+		CE58257829FE772400B3B395 /* AKFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKFormatter.swift; sourceTree = "<group>"; };
+		CE58257B29FE7D9C00B3B395 /* AKHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKHeader.swift; sourceTree = "<group>"; };
+		CE58257F29FE7E9E00B3B395 /* AlignmentHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlignmentHeader.xib; sourceTree = "<group>"; };
+		CE58258129FE7E9E00B3B395 /* CollectionTitledHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionTitledHeader.xib; sourceTree = "<group>"; };
+		CE58258229FE7E9F00B3B395 /* EmptyHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyHeader.xib; sourceTree = "<group>"; };
+		CE58258429FE7E9F00B3B395 /* ButtonHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonHeader.xib; sourceTree = "<group>"; };
+		CE58258629FE7E9F00B3B395 /* Header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Header.xib; sourceTree = "<group>"; };
+		CE58258829FE7E9F00B3B395 /* SeparatorHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeparatorHeader.xib; sourceTree = "<group>"; };
+		CE58259429FE863800B3B395 /* UITableViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewEx.swift; sourceTree = "<group>"; };
+		CE58259629FE866600B3B395 /* UICollectionViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewEx.swift; sourceTree = "<group>"; };
+		CE58259829FE873D00B3B395 /* AKConstraintBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKConstraintBuilder.swift; sourceTree = "<group>"; };
+		CE58259A29FE892F00B3B395 /* AKAnimatedHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKAnimatedHeaderView.swift; sourceTree = "<group>"; };
+		CE58259C29FE89FB00B3B395 /* CAShapeLayerEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAShapeLayerEx.swift; sourceTree = "<group>"; };
 		CEB3FC5829F3D6ED00F5623B /* Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB3FC5B29F3D6ED00F5623B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB3FC5D29F3D6ED00F5623B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +245,92 @@
 			path = Language;
 			sourceTree = "<group>";
 		};
+		CE58254529FE5E9100B3B395 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				CE58254629FE5EB200B3B395 /* AKRouterModel.swift */,
+				CE58254829FE5FC400B3B395 /* AKNavigationController.swift */,
+				CE58254A29FE604700B3B395 /* Controllers */,
+				CE58256929FE6F1200B3B395 /* Constructor */,
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
+		CE58254A29FE604700B3B395 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE58254B29FE607D00B3B395 /* AKLightStyleViewController.swift */,
+				CE58254D29FE608D00B3B395 /* AKDarkStyleViewController.swift */,
+				CE58254F29FE609D00B3B395 /* AKNotificatedViewController.swift */,
+				CE58255129FE619D00B3B395 /* AKContainerViewController.swift */,
+				CE58255729FE651800B3B395 /* TabBarController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CE58255729FE651800B3B395 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				CE58255329FE633B00B3B395 /* AKTabbarController.swift */,
+				CE58255D29FE6AE400B3B395 /* Animations */,
+				CE58255829FE655700B3B395 /* TabBar */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		CE58255829FE655700B3B395 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CE58255A29FE657600B3B395 /* AKTabBar.swift */,
+				CE58255929FE657600B3B395 /* AKTabBar.xib */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CE58255D29FE6AE400B3B395 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				CE58256029FE6B0100B3B395 /* CircularAnimation.swift */,
+				CE58255E29FE6B0100B3B395 /* SimpleAnimation.swift */,
+				CE58255F29FE6B0100B3B395 /* TabBarAnimation.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		CE58256929FE6F1200B3B395 /* Constructor */ = {
+			isa = PBXGroup;
+			children = (
+				CE58256C29FE6F6300B3B395 /* AKConstructor.swift */,
+				CE58256D29FE6F6300B3B395 /* AKConstructorDeafults.swift */,
+				CE58256A29FE6F6300B3B395 /* AKCollectionConstructor.swift */,
+				CE58256B29FE6F6300B3B395 /* AKTableConstructor.swift */,
+				CE58257A29FE7D8A00B3B395 /* Views */,
+			);
+			path = Constructor;
+			sourceTree = "<group>";
+		};
+		CE58257A29FE7D8A00B3B395 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE58257D29FE7E5F00B3B395 /* XIBs */,
+				CE58257B29FE7D9C00B3B395 /* AKHeader.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE58257D29FE7E5F00B3B395 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				CE58258629FE7E9F00B3B395 /* Header.xib */,
+				CE58257F29FE7E9E00B3B395 /* AlignmentHeader.xib */,
+				CE58258429FE7E9F00B3B395 /* ButtonHeader.xib */,
+				CE58258829FE7E9F00B3B395 /* SeparatorHeader.xib */,
+				CE58258229FE7E9F00B3B395 /* EmptyHeader.xib */,
+				CE58258129FE7E9E00B3B395 /* CollectionTitledHeader.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		CEB3FC4F29F3D6ED00F5623B = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +389,7 @@
 		CEB3FC8B29F3D9F200F5623B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CE58254529FE5E9100B3B395 /* Basics */,
 				CEB3FCA429F3E39B00F5623B /* AKConstants.swift */,
 				CEB3FC8C29F3DB6500F5623B /* AKInjector.swift */,
 				CEB3FCBB29F4041A00F5623B /* AKSessionCache.swift */,
@@ -292,12 +449,18 @@
 			isa = PBXGroup;
 			children = (
 				CEB3FCA929F3E73E00F5623B /* StringEx.swift */,
+				CE58257229FE763F00B3B395 /* UITableViewCellEx.swift */,
+				CE58259429FE863800B3B395 /* UITableViewEx.swift */,
+				CE58257429FE76B500B3B395 /* UICollectionViewCellEx.swift */,
+				CE58259629FE866600B3B395 /* UICollectionViewEx.swift */,
 				CEB3FCAB29F3E96A00F5623B /* ReactEx.swift */,
 				CEB3FCAD29F3E98100F5623B /* RealmEx.swift */,
 				CEB3FCAF29F3E9BD00F5623B /* CodableEx.swift */,
 				CEB3FCBD29F4054B00F5623B /* UIViewEx.swift */,
 				CEB3FCBF29F4071500F5623B /* UIViewControllerEx.swift */,
 				CEB3FCCB29F4142800F5623B /* UIApplicationEx.swift */,
+				CE58256729FE6E0E00B3B395 /* UIScrollViewEx.swift */,
+				CE58259C29FE89FB00B3B395 /* CAShapeLayerEx.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -333,7 +496,13 @@
 		CEB3FCCD29F4171700F5623B /* Addons */ = {
 			isa = PBXGroup;
 			children = (
+				CE58256529FE6C0A00B3B395 /* AKVibration.swift */,
 				CEB3FCCE29F4175300F5623B /* AKLocation.swift */,
+				CE58255529FE642600B3B395 /* AKSounder.swift */,
+				CE58257629FE770C00B3B395 /* AKValidator.swift */,
+				CE58257829FE772400B3B395 /* AKFormatter.swift */,
+				CE58259829FE873D00B3B395 /* AKConstraintBuilder.swift */,
+				CE58259A29FE892F00B3B395 /* AKAnimatedHeaderView.swift */,
 			);
 			path = Addons;
 			sourceTree = "<group>";
@@ -458,8 +627,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE58258A29FE7E9F00B3B395 /* AlignmentHeader.xib in Resources */,
+				CE58259129FE7E9F00B3B395 /* Header.xib in Resources */,
+				CE58258D29FE7E9F00B3B395 /* EmptyHeader.xib in Resources */,
+				CE58255B29FE657600B3B395 /* AKTabBar.xib in Resources */,
 				CEB3FC6829F3D6F000F5623B /* LaunchScreen.storyboard in Resources */,
+				CE58258F29FE7E9F00B3B395 /* ButtonHeader.xib in Resources */,
+				CE58259329FE7E9F00B3B395 /* SeparatorHeader.xib in Resources */,
 				CEB3FC6529F3D6F000F5623B /* Assets.xcassets in Resources */,
+				CE58258C29FE7E9F00B3B395 /* CollectionTitledHeader.xib in Resources */,
 				CEB3FC6329F3D6ED00F5623B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,24 +727,44 @@
 			files = (
 				CEB3FC8F29F3DB8600F5623B /* AKDBService.swift in Sources */,
 				CEB3FCB829F3FFF000F5623B /* AKThemeManager.swift in Sources */,
+				CE58257729FE770C00B3B395 /* AKValidator.swift in Sources */,
 				CEB3FCB629F3FC8700F5623B /* AKDataResponse.swift in Sources */,
 				CEB3FCCC29F4142800F5623B /* UIApplicationEx.swift in Sources */,
+				CE58254729FE5EB200B3B395 /* AKRouterModel.swift in Sources */,
 				CEB3FC9F29F3DFDF00F5623B /* AKRequester.swift in Sources */,
 				CE58254029FE54D400B3B395 /* AKLocaleManager.swift in Sources */,
+				CE58259B29FE892F00B3B395 /* AKAnimatedHeaderView.swift in Sources */,
 				CEB3FCA729F3E45500F5623B /* AKAPIPath.swift in Sources */,
+				CE58256629FE6C0A00B3B395 /* AKVibration.swift in Sources */,
+				CE58259929FE873D00B3B395 /* AKConstraintBuilder.swift in Sources */,
+				CE58259529FE863800B3B395 /* UITableViewEx.swift in Sources */,
 				CEB3FC9929F3DE4300F5623B /* AKServerInteractor.swift in Sources */,
+				CE58254C29FE607D00B3B395 /* AKLightStyleViewController.swift in Sources */,
+				CE58257929FE772400B3B395 /* AKFormatter.swift in Sources */,
 				CEB3FCAE29F3E98100F5623B /* RealmEx.swift in Sources */,
+				CE58257129FE6F6400B3B395 /* AKConstructorDeafults.swift in Sources */,
+				CE58259D29FE89FB00B3B395 /* CAShapeLayerEx.swift in Sources */,
+				CE58254E29FE608D00B3B395 /* AKDarkStyleViewController.swift in Sources */,
+				CE58256229FE6B0100B3B395 /* TabBarAnimation.swift in Sources */,
 				CEB3FCA529F3E39B00F5623B /* AKConstants.swift in Sources */,
+				CE58257C29FE7D9C00B3B395 /* AKHeader.swift in Sources */,
+				CE58257329FE763F00B3B395 /* UITableViewCellEx.swift in Sources */,
 				CEB3FCCA29F4102A00F5623B /* AKThemeFontStyle.swift in Sources */,
 				CEB3FCB029F3E9BD00F5623B /* CodableEx.swift in Sources */,
+				CE58256E29FE6F6400B3B395 /* AKCollectionConstructor.swift in Sources */,
 				CEB3FC9729F3DC8F00F5623B /* AKBaseViewModel.swift in Sources */,
 				CEB3FCAC29F3E96A00F5623B /* ReactEx.swift in Sources */,
 				CEB3FC6029F3D6ED00F5623B /* ViewController.swift in Sources */,
+				CE58255229FE619D00B3B395 /* AKContainerViewController.swift in Sources */,
+				CE58255429FE633B00B3B395 /* AKTabbarController.swift in Sources */,
 				CEB3FCC829F40F7700F5623B /* AKFontManager.swift in Sources */,
 				CEB3FC8D29F3DB6500F5623B /* AKInjector.swift in Sources */,
 				CEB3FCCF29F4175300F5623B /* AKLocation.swift in Sources */,
+				CE58256329FE6B0100B3B395 /* CircularAnimation.swift in Sources */,
 				CEB3FC9B29F3DEDB00F5623B /* AKAPIConfigs.swift in Sources */,
 				CEB3FC5C29F3D6ED00F5623B /* AppDelegate.swift in Sources */,
+				CE58255029FE609D00B3B395 /* AKNotificatedViewController.swift in Sources */,
+				CE58255C29FE657600B3B395 /* AKTabBar.swift in Sources */,
 				CEB3FC5E29F3D6ED00F5623B /* SceneDelegate.swift in Sources */,
 				CEB3FCA129F3E0DA00F5623B /* AKResponseValidator.swift in Sources */,
 				CEB3FCBA29F4005400F5623B /* AKThemeColorStyle.swift in Sources */,
@@ -577,14 +773,22 @@
 				CE58253C29FE52D400B3B395 /* AKLanguageManager.swift in Sources */,
 				CEB3FCAA29F3E73E00F5623B /* StringEx.swift in Sources */,
 				CEB3FCBE29F4054B00F5623B /* UIViewEx.swift in Sources */,
+				CE58257029FE6F6400B3B395 /* AKConstructor.swift in Sources */,
+				CE58254929FE5FC400B3B395 /* AKNavigationController.swift in Sources */,
 				CE58254229FE55B700B3B395 /* AKLocalizedString.swift in Sources */,
 				CEB3FC9D29F3DF6E00F5623B /* AKServerCommunicator.swift in Sources */,
+				CE58259729FE866600B3B395 /* UICollectionViewEx.swift in Sources */,
 				CE58254429FE580500B3B395 /* AKLocalizedTextsViewModel.swift in Sources */,
 				CEB3FCC429F40CDE00F5623B /* AKTheme.swift in Sources */,
 				CEB3FCC029F4071500F5623B /* UIViewControllerEx.swift in Sources */,
+				CE58256829FE6E0E00B3B395 /* UIScrollViewEx.swift in Sources */,
+				CE58256F29FE6F6400B3B395 /* AKTableConstructor.swift in Sources */,
 				CEB3FCC229F409A700F5623B /* AKThemeImageStyle.swift in Sources */,
 				CE58253E29FE544E00B3B395 /* AKLanguage.swift in Sources */,
+				CE58256129FE6B0100B3B395 /* SimpleAnimation.swift in Sources */,
 				CEB3FCB229F3EA8700F5623B /* AKRouter.swift in Sources */,
+				CE58257529FE76B500B3B395 /* UICollectionViewCellEx.swift in Sources */,
+				CE58255629FE642600B3B395 /* AKSounder.swift in Sources */,
 				CEB3FCA329F3E2D200F5623B /* AKAPIRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

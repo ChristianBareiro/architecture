@@ -12,4 +12,9 @@ let router = sharedInjector.router
 
 class AKRouter {
 
+    let currentNavigationController: UINavigationController? = nil
+    
+    func addPreloader() {}
+    func removePreloader() {}
+    
 }

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NlK-gQ-aW3" customClass="Header" customModule="ABank24" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dC5-Q7-P1s">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fu9-v1-S7X">
+                    <rect key="frame" x="16" y="13" width="0.0" height="645"/>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="750" constant="335" id="x0S-iS-IUd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdY-db-cgH">
+                    <rect key="frame" x="359" y="13" width="0.0" height="645"/>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="750" constant="42" id="OYS-5r-geV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
+                    <color key="textColor" red="0.70588235290000001" green="0.81176470590000005" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vF-ZV-PSo">
+                    <rect key="frame" x="271" y="309.5" width="88" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVh-SW-4M1">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="48"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="contentEdgeInsets" minX="8" minY="8" maxX="4" maxY="8"/>
+                            <state key="normal" image="ic_filter_main"/>
+                            <connections>
+                                <action selector="openFilter:" destination="NlK-gQ-aW3" eventType="touchUpInside" id="8es-lM-aa0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1H-gT-e9y">
+                            <rect key="frame" x="44" y="0.0" width="44" height="48"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="contentEdgeInsets" minX="4" minY="8" maxX="8" maxY="8"/>
+                            <state key="normal" image="ic_analytics_main"/>
+                            <connections>
+                                <action selector="openAnalytics:" destination="NlK-gQ-aW3" eventType="touchUpInside" id="g9A-mF-Q6W"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4vF-ZV-PSo" secondAttribute="trailing" constant="16" id="04e-pQ-bsv"/>
+                <constraint firstItem="fu9-v1-S7X" firstAttribute="leading" secondItem="NlK-gQ-aW3" secondAttribute="leading" constant="16" id="B5v-Za-nfB"/>
+                <constraint firstAttribute="trailing" secondItem="fdY-db-cgH" secondAttribute="trailing" constant="16" id="IQ8-IR-ZCA"/>
+                <constraint firstItem="fdY-db-cgH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fu9-v1-S7X" secondAttribute="trailing" constant="8" id="Kxe-IY-HNc"/>
+                <constraint firstItem="dC5-Q7-P1s" firstAttribute="top" secondItem="NlK-gQ-aW3" secondAttribute="top" id="Way-Bc-t0e"/>
+                <constraint firstItem="fu9-v1-S7X" firstAttribute="top" secondItem="NlK-gQ-aW3" secondAttribute="top" constant="13" id="Z13-zc-LNe"/>
+                <constraint firstAttribute="bottom" secondItem="dC5-Q7-P1s" secondAttribute="bottom" id="cZs-zR-7ky"/>
+                <constraint firstItem="fdY-db-cgH" firstAttribute="height" secondItem="fu9-v1-S7X" secondAttribute="height" id="hPs-6B-uHO"/>
+                <constraint firstItem="fdY-db-cgH" firstAttribute="top" secondItem="fu9-v1-S7X" secondAttribute="top" id="l7Y-EW-fdk"/>
+                <constraint firstAttribute="trailing" secondItem="dC5-Q7-P1s" secondAttribute="trailing" id="rwi-Qe-zJ0"/>
+                <constraint firstItem="4vF-ZV-PSo" firstAttribute="centerY" secondItem="NlK-gQ-aW3" secondAttribute="centerY" id="skH-NN-a1v"/>
+                <constraint firstItem="dC5-Q7-P1s" firstAttribute="leading" secondItem="NlK-gQ-aW3" secondAttribute="leading" id="txo-Uf-3ty"/>
+                <constraint firstAttribute="bottom" secondItem="fu9-v1-S7X" secondAttribute="bottom" constant="9" id="zfq-dn-3AU"/>
+            </constraints>
+            <connections>
+                <outlet property="analyticButton" destination="f1H-gT-e9y" id="xbl-rK-hLJ"/>
+                <outlet property="colorView" destination="dC5-Q7-P1s" id="IBN-Vw-FW6"/>
+                <outlet property="counterLabel" destination="fdY-db-cgH" id="Idq-si-fdz"/>
+                <outlet property="filterButton" destination="TVh-SW-4M1" id="4Oo-9Q-Gtk"/>
+                <outlet property="headerLabel" destination="fu9-v1-S7X" id="b6b-Uk-drQ"/>
+                <outlet property="stackView" destination="4vF-ZV-PSo" id="F9I-Oc-OVC"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="9"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_analytics_main" width="32" height="32"/>
+        <image name="ic_filter_main" width="32" height="32"/>
+    </resources>
+</document>
