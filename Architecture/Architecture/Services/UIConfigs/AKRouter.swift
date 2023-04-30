@@ -8,6 +8,8 @@
 
 import UIKit
 
+let router = sharedInjector.router
+
 class AKRouter {
 
 }

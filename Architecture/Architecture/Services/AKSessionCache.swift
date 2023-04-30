@@ -26,4 +26,8 @@ class AKSessionCache {
         get { UserDefaults.standard.integer(forKey: kCurrentFontSize) }
     }
     
+    var currentLocalization: String {
+        get { return NSLocalizedString("current_localization", comment: "") }
+    }
+    
 }

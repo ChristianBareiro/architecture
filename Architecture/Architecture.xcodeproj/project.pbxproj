@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		4DF917C5BF9D55FFA35D401F /* Pods_Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4C9297027C8F54C243F98B /* Pods_Architecture.framework */; };
 		A46AF6762F48592B1C78F13F /* Pods_ArchitectureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DECFA8FE4588B3A899D39E /* Pods_ArchitectureTests.framework */; };
+		CE58253C29FE52D400B3B395 /* AKLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58253B29FE52D400B3B395 /* AKLanguageManager.swift */; };
+		CE58253E29FE544E00B3B395 /* AKLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58253D29FE544E00B3B395 /* AKLanguage.swift */; };
+		CE58254029FE54D400B3B395 /* AKLocaleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58253F29FE54D400B3B395 /* AKLocaleManager.swift */; };
+		CE58254229FE55B700B3B395 /* AKLocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58254129FE55B700B3B395 /* AKLocalizedString.swift */; };
+		CE58254429FE580500B3B395 /* AKLocalizedTextsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58254329FE580500B3B395 /* AKLocalizedTextsViewModel.swift */; };
 		CEB3FC5C29F3D6ED00F5623B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FC5B29F3D6ED00F5623B /* AppDelegate.swift */; };
 		CEB3FC5E29F3D6ED00F5623B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FC5D29F3D6ED00F5623B /* SceneDelegate.swift */; };
 		CEB3FC6029F3D6ED00F5623B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FC5F29F3D6ED00F5623B /* ViewController.swift */; };
@@ -73,6 +78,11 @@
 		851E5540AF334E285931FED5 /* Pods-Architecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Architecture.release.xcconfig"; path = "Target Support Files/Pods-Architecture/Pods-Architecture.release.xcconfig"; sourceTree = "<group>"; };
 		8A28065B8F1F54DF607DB4CC /* Pods-ArchitectureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectureTests.release.xcconfig"; path = "Target Support Files/Pods-ArchitectureTests/Pods-ArchitectureTests.release.xcconfig"; sourceTree = "<group>"; };
 		BA4C9297027C8F54C243F98B /* Pods_Architecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Architecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE58253B29FE52D400B3B395 /* AKLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLanguageManager.swift; sourceTree = "<group>"; };
+		CE58253D29FE544E00B3B395 /* AKLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLanguage.swift; sourceTree = "<group>"; };
+		CE58253F29FE54D400B3B395 /* AKLocaleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLocaleManager.swift; sourceTree = "<group>"; };
+		CE58254129FE55B700B3B395 /* AKLocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLocalizedString.swift; sourceTree = "<group>"; };
+		CE58254329FE580500B3B395 /* AKLocalizedTextsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLocalizedTextsViewModel.swift; sourceTree = "<group>"; };
 		CEB3FC5829F3D6ED00F5623B /* Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB3FC5B29F3D6ED00F5623B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB3FC5D29F3D6ED00F5623B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +161,18 @@
 				00DECFA8FE4588B3A899D39E /* Pods_ArchitectureTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE58253A29FE528F00B3B395 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				CE58253B29FE52D400B3B395 /* AKLanguageManager.swift */,
+				CE58253D29FE544E00B3B395 /* AKLanguage.swift */,
+				CE58253F29FE54D400B3B395 /* AKLocaleManager.swift */,
+				CE58254129FE55B700B3B395 /* AKLocalizedString.swift */,
+				CE58254329FE580500B3B395 /* AKLocalizedTextsViewModel.swift */,
+			);
+			path = Language;
 			sourceTree = "<group>";
 		};
 		CEB3FC4F29F3D6ED00F5623B = {
@@ -234,6 +256,7 @@
 		CEB3FC9329F3DC1A00F5623B /* UIConfigs */ = {
 			isa = PBXGroup;
 			children = (
+				CE58253A29FE528F00B3B395 /* Language */,
 				CEB3FCC529F40F2B00F5623B /* Themes */,
 				CEB3FCC629F40F5300F5623B /* Fonts */,
 				CEB3FC9029F3DBC000F5623B /* AKUIService.swift */,
@@ -531,6 +554,7 @@
 				CEB3FCB629F3FC8700F5623B /* AKDataResponse.swift in Sources */,
 				CEB3FCCC29F4142800F5623B /* UIApplicationEx.swift in Sources */,
 				CEB3FC9F29F3DFDF00F5623B /* AKRequester.swift in Sources */,
+				CE58254029FE54D400B3B395 /* AKLocaleManager.swift in Sources */,
 				CEB3FCA729F3E45500F5623B /* AKAPIPath.swift in Sources */,
 				CEB3FC9929F3DE4300F5623B /* AKServerInteractor.swift in Sources */,
 				CEB3FCAE29F3E98100F5623B /* RealmEx.swift in Sources */,
@@ -550,12 +574,16 @@
 				CEB3FCBA29F4005400F5623B /* AKThemeColorStyle.swift in Sources */,
 				CEB3FC9129F3DBC000F5623B /* AKUIService.swift in Sources */,
 				CEB3FCBC29F4041A00F5623B /* AKSessionCache.swift in Sources */,
+				CE58253C29FE52D400B3B395 /* AKLanguageManager.swift in Sources */,
 				CEB3FCAA29F3E73E00F5623B /* StringEx.swift in Sources */,
 				CEB3FCBE29F4054B00F5623B /* UIViewEx.swift in Sources */,
+				CE58254229FE55B700B3B395 /* AKLocalizedString.swift in Sources */,
 				CEB3FC9D29F3DF6E00F5623B /* AKServerCommunicator.swift in Sources */,
+				CE58254429FE580500B3B395 /* AKLocalizedTextsViewModel.swift in Sources */,
 				CEB3FCC429F40CDE00F5623B /* AKTheme.swift in Sources */,
 				CEB3FCC029F4071500F5623B /* UIViewControllerEx.swift in Sources */,
 				CEB3FCC229F409A700F5623B /* AKThemeImageStyle.swift in Sources */,
+				CE58253E29FE544E00B3B395 /* AKLanguage.swift in Sources */,
 				CEB3FCB229F3EA8700F5623B /* AKRouter.swift in Sources */,
 				CEB3FCA329F3E2D200F5623B /* AKAPIRequest.swift in Sources */,
 			);

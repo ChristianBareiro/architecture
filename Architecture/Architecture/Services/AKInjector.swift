@@ -21,6 +21,8 @@ class AKInjector {
     let fontManager = AKFontManager()
     let sessionCache = AKSessionCache()
     let serverCommunicator = AKServerCommunicator()
+    let localizer = AKLocalizableString()
+    let router = AKRouter()
     
     var reachabilityRx: PublishSubject<Bool> = PublishSubject()
     

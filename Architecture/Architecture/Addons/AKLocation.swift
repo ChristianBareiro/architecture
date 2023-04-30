@@ -15,13 +15,13 @@ import RxSwift
 // let disposeBag: DisposeBag = DisposeBag()
 //
 // manager
-//    .didUpdate
+//    .onUpdate
 //    .subscribe(onNext: { [weak self] dictionary in
 //        let coordinates = dictionary["locationCoordinate"] as? CLLocationCoordinate2D
 //        // do
 //    })
 //    .disposed(by: disposeBag)
-// manager.failure
+// manager.onFailure
 //    .subscribe(onNext: { [weak self] error in
 //        // do smth with error
 //    })
@@ -32,8 +32,8 @@ class AKLocation: NSObject, CLLocationManagerDelegate {
     
     var locationManager: CLLocationManager!
     var locationCoordinate: CLLocationCoordinate2D?
-    var didUpdate: PublishSubject<[String: Any]> = PublishSubject()
-    var failure: PublishSubject<String> = PublishSubject()
+    var onUpdate: PublishSubject<[String: Any]> = PublishSubject()
+    var onFailure: PublishSubject<String> = PublishSubject()
     var isLocationEnabled: Bool {
         switch CLLocationManager.authorizationStatus() {
         case .notDetermined, .restricted, .denied: return false
@@ -59,18 +59,18 @@ class AKLocation: NSObject, CLLocationManagerDelegate {
             locationManager.startUpdatingLocation()
         case .notDetermined: break
         default:
-            failure.onNext("User denied access to location")
+            onFailure.onNext("User denied access to location")
         }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locationCoordinate = manager.location!.coordinate
-        didUpdate.onNext(["locationCoordinate": locationCoordinate as AnyObject])
+        onUpdate.onNext(["locationCoordinate": locationCoordinate as AnyObject])
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         debugPrint(error.localizedDescription)
-        failure.onNext(error.localizedDescription)
+        onFailure.onNext(error.localizedDescription)
     }
     
     func stopUpdatingLocation() {
