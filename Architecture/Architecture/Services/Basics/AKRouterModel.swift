@@ -46,6 +46,7 @@ class AKRouterModel: NSObject, InterfaceItemDelegate {
     
     public override init() {
         super.init()
+        sessionCache.mTabbarController?.hideBottomBar(true)
         info.delegate = self
         setupViews()
         setupSettings()
@@ -149,7 +150,7 @@ class AKRouterModel: NSObject, InterfaceItemDelegate {
 
     func setupViews() {
         customizeBackButton = { button in
-            button.isHidden = (self.navigationController?.viewControllers.count ?? 0) < 3
+            button.isHidden = (self.navigationController?.viewControllers.count ?? 0) < 2
         }
     }
     func allDataLoaded() {

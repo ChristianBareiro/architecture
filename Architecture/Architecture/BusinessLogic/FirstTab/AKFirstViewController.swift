@@ -48,12 +48,12 @@ enum FakeData: CaseIterable, SimpleValueProtocol {
 
 class TableExampleInfo: Info {
     
-    init(array: [FakeData]) {
+    init(array: [SimpleValueProtocol]) {
         super.init()
         sectionInfo = [mySection(array: array)]
     }
     
-    private func mySection(array: [FakeData]) -> HFSuperClass {
+    private func mySection(array: [SimpleValueProtocol]) -> HFSuperClass {
         var section = HFSuperClass()
         section.data = array.map { CellSuperClass(id: .textWithImage, object: $0) }
         return section
@@ -77,11 +77,6 @@ class AKFirstViewController: UIViewController {
         sessionCache.mTabbarController?.hideBottomBar(false)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        sessionCache.mTabbarController?.hideBottomBar(true)
-    }
-    
     private func initConstructor() {
         // as empty info ConstructorSuperClass() can be used
         // if your table is refreshable (means pull to refresh implemented)
@@ -95,7 +90,7 @@ class AKFirstViewController: UIViewController {
 
     override func refreshData(_ block: @escaping SuccessHandler) {
 //        super.refreshData(block) don't call
-        constructor?.info = TableExampleInfo(array: [.second, .third, .fourth])
+        constructor?.info = TableExampleInfo(array: [FakeData.second, FakeData.third, FakeData.fourth])
         // do everything you need and then call block, to inform constructor
         // you finished your updates and want to perform some changes inside
         // block(true)

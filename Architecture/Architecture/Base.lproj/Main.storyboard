@@ -12,9 +12,8 @@
         <!--Navigation Controller-->
         <scene sceneID="aYB-KD-JQJ">
             <objects>
-                <navigationController storyboardIdentifier="navigation" id="nPd-ZG-xIy" customClass="AKNavigationController" customModule="Architecture" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navigation" navigationBarHidden="YES" id="nPd-ZG-xIy" customClass="AKNavigationController" customModule="Architecture" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bqe-ke-Xxh">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -344,10 +343,9 @@
         <!--Item-->
         <scene sceneID="RnF-dv-Kap">
             <objects>
-                <navigationController id="sZK-uH-0tQ" customClass="AKNavigationController" customModule="Architecture" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="sZK-uH-0tQ" customClass="AKNavigationController" customModule="Architecture" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Ter-Tp-zu1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="h8V-yN-t9d">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -361,10 +359,9 @@
         <!--Item-->
         <scene sceneID="Wbx-uq-BFB">
             <objects>
-                <navigationController id="cBZ-K5-p9J" customClass="AKNavigationController" customModule="Architecture" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="cBZ-K5-p9J" customClass="AKNavigationController" customModule="Architecture" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="xHc-eP-MuY"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jyT-zF-qeg">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -388,10 +385,9 @@
         <!--Item-->
         <scene sceneID="QUC-hU-xAo">
             <objects>
-                <navigationController id="GnV-Sv-Tbm" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="GnV-Sv-Tbm" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Rmx-Tx-m15"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="csf-j5-eDD">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -405,10 +401,9 @@
         <!--Item-->
         <scene sceneID="MdL-Gq-XhZ">
             <objects>
-                <navigationController id="zJU-zm-eOL" customClass="AKNavigationController" customModule="Architecture" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="zJU-zm-eOL" customClass="AKNavigationController" customModule="Architecture" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="wtS-Vd-baG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YAV-cB-2la">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

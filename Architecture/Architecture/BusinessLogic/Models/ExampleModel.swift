@@ -17,6 +17,15 @@ class ExampleModel: AKRouterModel {
         hideBottomButton = false
         screenTitle = object.title
         value = object
+        info = TableExampleInfo(array: [object, object, object])
+    }
+    
+    override func allDataLoaded() {
+        super.allDataLoaded()
+        constructor?.handler = { path, object in
+            guard let value = object?.object as? SimpleValueProtocol else { return }
+            router.openExample(object: value)
+        }
     }
     
     override func bottomButtonTapped() {

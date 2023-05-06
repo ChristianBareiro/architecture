@@ -39,11 +39,6 @@ class AKSecondViewController: UIViewController {
         sessionCache.mTabbarController?.hideBottomBar(false)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        sessionCache.mTabbarController?.hideBottomBar(true)
-    }
-    
     private func initConstructor() {
         // as empty info ConstructorSuperClass() can be used
         // if your table is refreshable (means pull to refresh implemented)
