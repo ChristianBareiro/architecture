@@ -13,10 +13,9 @@ let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var injector: AKInjector = AKInjector()
-    var window: UIWindow?
+    var keyWindow: UIWindow? { UIApplication.shared.windows.first { $0.isKeyWindow } }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow()
         // Override point for customization after application launch.
         return true
     }

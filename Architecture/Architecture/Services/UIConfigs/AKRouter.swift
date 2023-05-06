@@ -12,9 +12,16 @@ let router = sharedInjector.router
 
 class AKRouter {
 
-    let currentNavigationController: UINavigationController? = nil
-    
+    var currentNavigationController: UINavigationController? { UIApplication.shared.topViewController()?.navigationController }
     func addPreloader() {}
     func removePreloader() {}
+    
+}
+
+extension AKRouter {
+    
+    func openExample(object: SimpleValueProtocol) {
+        currentNavigationController?.showModel(model: ExampleModel(object: object))
+    }
     
 }

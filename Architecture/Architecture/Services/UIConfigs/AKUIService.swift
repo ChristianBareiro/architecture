@@ -23,7 +23,7 @@ class AKUIService {
         UITextField.appearance().keyboardAppearance = appThemeManager.isLightTheme ? .light : .dark
         UIApplication.shared.topViewController()?.setNeedsStatusBarAppearanceUpdate()
         if #available(iOS 13.0, *) {
-            appDelegate.window?.overrideUserInterfaceStyle = appThemeManager.isDarkTheme ? .dark : .light
+            appDelegate.keyWindow?.overrideUserInterfaceStyle = appThemeManager.isDarkTheme ? .dark : .light
         }
     }
     

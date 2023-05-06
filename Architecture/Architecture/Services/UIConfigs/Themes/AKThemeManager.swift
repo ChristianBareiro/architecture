@@ -56,7 +56,7 @@ extension AKThemeManager {
     }
     
     func updateUIWithoutRestart() {
-        if let image = appDelegate.window?.snapShot, let window = appDelegate.window {
+        if let image = appDelegate.keyWindow?.snapShot, let window = appDelegate.keyWindow {
             let view = UIView(frame: UIScreen.main.bounds)
             let imageView = UIImageView(frame: UIScreen.main.bounds)
             imageView.image = image

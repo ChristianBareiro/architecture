@@ -16,13 +16,13 @@ class AKInjector {
         AKDBService()
     }
     
-    let uiService = AKUIService()
-    let themeManager = AKThemeManager()
-    let fontManager = AKFontManager()
-    let sessionCache = AKSessionCache()
-    let serverCommunicator = AKServerCommunicator()
-    let localizer = AKLocalizableString()
-    let router = AKRouter()
+    lazy var uiService = { AKUIService() }()
+    lazy var  themeManager = { AKThemeManager() }()
+    lazy var  fontManager = { AKFontManager() }()
+    lazy var  sessionCache = { AKSessionCache() }()
+    lazy var  serverCommunicator = { AKServerCommunicator() }()
+    lazy var  localizer = { AKLocalizableString() }()
+    lazy var  router = { AKRouter() }()
     
     var reachabilityRx: PublishSubject<Bool> = PublishSubject()
     

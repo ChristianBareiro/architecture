@@ -8,7 +8,7 @@ enum AKIdentifier: String {
     case preloader = "preloaderCell"
     
     // collection cells
-    
+    case textWithImageC = "textImageCollectionCell"
     case cLoader = "loaderCollectionViewCell"
     
     // Table view headers

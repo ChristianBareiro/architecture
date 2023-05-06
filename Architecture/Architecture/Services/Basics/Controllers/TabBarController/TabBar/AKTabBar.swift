@@ -9,6 +9,64 @@
 import UIKit
 import RxSwift
 
+// MARK: - rude example of implementation custom tabbar
+// in fact in real project it must be based on some enum
+// and can be dynamic as an example below:
+
+//enum MyTabBarItem: Int, CaseIterable {
+//
+//    case first = 1, second, third
+//
+//    var image: UIImage? {
+//        switch self {
+//        case .first: return UIImage(named: "your_first_item_image")
+//        default: return nil
+//        }
+//    }
+//
+//    var title: String {
+//        switch self {
+//        case .first: return AKLocalizedString("item 1", comment: "")
+//        default: return AKLocalizedString("item other", comment: "")
+//        }
+//    }
+//
+//    // your view for tab item based on enum value
+//    var item: UIView { ItemView(value: self) }
+//
+////    rawValue can be used as a tag or index
+//
+//}
+//
+//class ItemView: UIView {
+//
+//    // this class is not completed and used only as example to show all chain of dependencies
+//
+//    // outlets if you want
+//    private var imageView: UIImageView!
+//    private var titleLable: UILabel!
+//
+//    init(value: MyTabBarItem) {
+//        imageView.image = value.image
+//        titleLable.text = value.title
+//    }
+//
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+//
+//}
+//
+//class AKTabBar: UIView {
+//
+//    @IBOutlet weak var stackView: UIStackView! {
+//        didSet {
+//            MyTabBarItem.allCases.forEach { stackView.addArrangedSubview($0.item) }
+//        }
+//    }
+//
+//}
+
 typealias AKTabBarItemSelected = (Int) -> ()
 
 class AKTabBar: UIView {

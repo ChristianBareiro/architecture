@@ -33,7 +33,7 @@ extension UINavigationController {
     }
     
     func presentTabBar() {
-        let storyboard = UIStoryboard(name: "ABMain", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let tabbarController = storyboard.instantiateViewController(withIdentifier: "tabbar")
         tabbarController.modalPresentationStyle = .fullScreen
         present(tabbarController, animated: true, completion: nil)
@@ -46,7 +46,7 @@ extension UINavigationController {
     }
     
     func presentModel(model: AKRouterModel, animated: Bool = true, fullScreen: Bool = false) {
-        let storyboard = UIStoryboard(name: "ABMain", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let nvc = storyboard.instantiateViewController(withIdentifier: "navigation") as? AKNavigationController
         let controller = AKNotificatedViewController.controller()
         controller.model = model

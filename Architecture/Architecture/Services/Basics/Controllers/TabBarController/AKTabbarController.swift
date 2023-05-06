@@ -18,6 +18,7 @@ class AKTabBarController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        sessionCache.mTabbarController = self
         hidesBottomBarWhenPushed = true
         addObservers()
     }
@@ -73,6 +74,8 @@ class AKTabBarController: UITabBarController, UITabBarControllerDelegate {
     }
     
     func reloadTabbar() {
+        tabBarView.removeFromSuperview()
+        tabBarView = nil
         instantiateTabBar()
     }
     

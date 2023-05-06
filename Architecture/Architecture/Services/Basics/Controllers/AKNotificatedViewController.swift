@@ -23,7 +23,7 @@ class AKNotificatedViewController: UIViewController {
         return navigationController?.viewControllers.count ?? .zero > 1 ? canSwipeGesture : false
     }
     
-    static func controller<T: AKNotificatedViewController>(storyboardName: String = "ABMain", identifier: String = "container") -> T {
+    static func controller<T: AKNotificatedViewController>(storyboardName: String = "Main", identifier: String = "container") -> T {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
         return storyboard.instantiateViewController(withIdentifier: identifier) as! T
     }

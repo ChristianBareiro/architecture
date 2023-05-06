@@ -10,7 +10,7 @@ import UIKit
 
 extension UIApplication {
     
-    func topViewController(_ viewController: UIViewController? = appDelegate.window?.rootViewController) -> UIViewController? {
+    func topViewController(_ viewController: UIViewController? = appDelegate.keyWindow?.rootViewController) -> UIViewController? {
         if let nav = viewController as? UINavigationController { return topViewController(nav.visibleViewController) }
         if let presented = viewController?.presentedViewController { return topViewController(presented) }
         if let tab = viewController as? UITabBarController {

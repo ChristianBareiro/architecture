@@ -14,6 +14,13 @@
 		CE45DFB72A06497900679AEA /* ThirdTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE45DFB62A06497900679AEA /* ThirdTab.storyboard */; };
 		CE45DFB92A06498600679AEA /* FourthTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE45DFB82A06498600679AEA /* FourthTab.storyboard */; };
 		CE45DFBB2A06499600679AEA /* FifthTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE45DFBA2A06499600679AEA /* FifthTab.storyboard */; };
+		CE45DFC32A0665FE00679AEA /* AKFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45DFC22A0665FE00679AEA /* AKFirstViewController.swift */; };
+		CE45DFC52A06661B00679AEA /* AKSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45DFC42A06661B00679AEA /* AKSecondViewController.swift */; };
+		CE45DFCE2A0668F500679AEA /* TextImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45DFCC2A0668F500679AEA /* TextImageCell.swift */; };
+		CE45DFCF2A0668F500679AEA /* TextImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE45DFCD2A0668F500679AEA /* TextImageCell.xib */; };
+		CE45DFD22A06719A00679AEA /* TextImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45DFD02A06719A00679AEA /* TextImageCollectionCell.swift */; };
+		CE45DFD32A06719A00679AEA /* TextImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE45DFD12A06719A00679AEA /* TextImageCollectionCell.xib */; };
+		CE45DFD62A06738900679AEA /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45DFD52A06738900679AEA /* ExampleModel.swift */; };
 		CE58253C29FE52D400B3B395 /* AKLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58253B29FE52D400B3B395 /* AKLanguageManager.swift */; };
 		CE58253E29FE544E00B3B395 /* AKLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58253D29FE544E00B3B395 /* AKLanguage.swift */; };
 		CE58254029FE54D400B3B395 /* AKLocaleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58253F29FE54D400B3B395 /* AKLocaleManager.swift */; };
@@ -123,6 +130,13 @@
 		CE45DFB62A06497900679AEA /* ThirdTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdTab.storyboard; sourceTree = "<group>"; };
 		CE45DFB82A06498600679AEA /* FourthTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FourthTab.storyboard; sourceTree = "<group>"; };
 		CE45DFBA2A06499600679AEA /* FifthTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FifthTab.storyboard; sourceTree = "<group>"; };
+		CE45DFC22A0665FE00679AEA /* AKFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKFirstViewController.swift; sourceTree = "<group>"; };
+		CE45DFC42A06661B00679AEA /* AKSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKSecondViewController.swift; sourceTree = "<group>"; };
+		CE45DFCC2A0668F500679AEA /* TextImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextImageCell.swift; sourceTree = "<group>"; };
+		CE45DFCD2A0668F500679AEA /* TextImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextImageCell.xib; sourceTree = "<group>"; };
+		CE45DFD02A06719A00679AEA /* TextImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextImageCollectionCell.swift; sourceTree = "<group>"; };
+		CE45DFD12A06719A00679AEA /* TextImageCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextImageCollectionCell.xib; sourceTree = "<group>"; };
+		CE45DFD52A06738900679AEA /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
 		CE58253B29FE52D400B3B395 /* AKLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLanguageManager.swift; sourceTree = "<group>"; };
 		CE58253D29FE544E00B3B395 /* AKLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLanguage.swift; sourceTree = "<group>"; };
 		CE58253F29FE54D400B3B395 /* AKLocaleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLocaleManager.swift; sourceTree = "<group>"; };
@@ -243,6 +257,82 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE45DFBC2A0660D600679AEA /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				CE45DFD42A06736300679AEA /* Models */,
+				CE45DFC12A06611400679AEA /* FifthTab */,
+				CE45DFC02A06610C00679AEA /* FourthTab */,
+				CE45DFBF2A06610500679AEA /* ThirdTab */,
+				CE45DFBE2A0660FD00679AEA /* SecondTab */,
+				CE45DFBD2A0660F000679AEA /* FirstTab */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		CE45DFBD2A0660F000679AEA /* FirstTab */ = {
+			isa = PBXGroup;
+			children = (
+				CE45DFC22A0665FE00679AEA /* AKFirstViewController.swift */,
+			);
+			path = FirstTab;
+			sourceTree = "<group>";
+		};
+		CE45DFBE2A0660FD00679AEA /* SecondTab */ = {
+			isa = PBXGroup;
+			children = (
+				CE45DFC42A06661B00679AEA /* AKSecondViewController.swift */,
+			);
+			path = SecondTab;
+			sourceTree = "<group>";
+		};
+		CE45DFBF2A06610500679AEA /* ThirdTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdTab;
+			sourceTree = "<group>";
+		};
+		CE45DFC02A06610C00679AEA /* FourthTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FourthTab;
+			sourceTree = "<group>";
+		};
+		CE45DFC12A06611400679AEA /* FifthTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FifthTab;
+			sourceTree = "<group>";
+		};
+		CE45DFC62A06686E00679AEA /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				CE45DFCC2A0668F500679AEA /* TextImageCell.swift */,
+				CE45DFCD2A0668F500679AEA /* TextImageCell.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		CE45DFC72A06687600679AEA /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				CE45DFD02A06719A00679AEA /* TextImageCollectionCell.swift */,
+				CE45DFD12A06719A00679AEA /* TextImageCollectionCell.xib */,
+			);
+			path = CollectionCells;
+			sourceTree = "<group>";
+		};
+		CE45DFD42A06736300679AEA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE45DFD52A06738900679AEA /* ExampleModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CE58253A29FE528F00B3B395 /* Language */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +412,8 @@
 		CE58257A29FE7D8A00B3B395 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE45DFC72A06687600679AEA /* CollectionCells */,
+				CE45DFC62A06686E00679AEA /* TableCells */,
 				CE58257D29FE7E5F00B3B395 /* XIBs */,
 				CE58257B29FE7D9C00B3B395 /* AKHeader.swift */,
 			);
@@ -371,6 +463,7 @@
 				CEB3FC5B29F3D6ED00F5623B /* AppDelegate.swift */,
 				CEB3FC5D29F3D6ED00F5623B /* SceneDelegate.swift */,
 				CEB3FC5F29F3D6ED00F5623B /* ViewController.swift */,
+				CE45DFBC2A0660D600679AEA /* BusinessLogic */,
 				CEB3FC6429F3D6F000F5623B /* Assets.xcassets */,
 				CEB3FC6129F3D6ED00F5623B /* Main.storyboard */,
 				CE45DFB22A06495600679AEA /* FirstTab.storyboard */,
@@ -644,6 +737,7 @@
 			files = (
 				CE45DFB72A06497900679AEA /* ThirdTab.storyboard in Resources */,
 				CE58258A29FE7E9F00B3B395 /* AlignmentHeader.xib in Resources */,
+				CE45DFD32A06719A00679AEA /* TextImageCollectionCell.xib in Resources */,
 				CE58259129FE7E9F00B3B395 /* Header.xib in Resources */,
 				CE58258D29FE7E9F00B3B395 /* EmptyHeader.xib in Resources */,
 				CE58255B29FE657600B3B395 /* AKTabBar.xib in Resources */,
@@ -652,6 +746,7 @@
 				CE58258F29FE7E9F00B3B395 /* ButtonHeader.xib in Resources */,
 				CE45DFB32A06495600679AEA /* FirstTab.storyboard in Resources */,
 				CE58259329FE7E9F00B3B395 /* SeparatorHeader.xib in Resources */,
+				CE45DFCF2A0668F500679AEA /* TextImageCell.xib in Resources */,
 				CE45DFBB2A06499600679AEA /* FifthTab.storyboard in Resources */,
 				CEB3FC6529F3D6F000F5623B /* Assets.xcassets in Resources */,
 				CE58258C29FE7E9F00B3B395 /* CollectionTitledHeader.xib in Resources */,
@@ -755,6 +850,7 @@
 				CE58254029FE54D400B3B395 /* AKLocaleManager.swift in Sources */,
 				CE58259B29FE892F00B3B395 /* AKAnimatedHeaderView.swift in Sources */,
 				CEB3FCA729F3E45500F5623B /* AKAPIPath.swift in Sources */,
+				CE45DFCE2A0668F500679AEA /* TextImageCell.swift in Sources */,
 				CE58256629FE6C0A00B3B395 /* AKVibration.swift in Sources */,
 				CE58259929FE873D00B3B395 /* AKConstraintBuilder.swift in Sources */,
 				CE58259529FE863800B3B395 /* UITableViewEx.swift in Sources */,
@@ -774,10 +870,13 @@
 				CE58256E29FE6F6400B3B395 /* AKCollectionConstructor.swift in Sources */,
 				CEB3FC9729F3DC8F00F5623B /* AKBaseViewModel.swift in Sources */,
 				CEB3FCAC29F3E96A00F5623B /* ReactEx.swift in Sources */,
+				CE45DFC52A06661B00679AEA /* AKSecondViewController.swift in Sources */,
 				CEB3FC6029F3D6ED00F5623B /* ViewController.swift in Sources */,
 				CE58255229FE619D00B3B395 /* AKContainerViewController.swift in Sources */,
 				CE58255429FE633B00B3B395 /* AKTabbarController.swift in Sources */,
 				CEB3FCC829F40F7700F5623B /* AKFontManager.swift in Sources */,
+				CE45DFC32A0665FE00679AEA /* AKFirstViewController.swift in Sources */,
+				CE45DFD22A06719A00679AEA /* TextImageCollectionCell.swift in Sources */,
 				CEB3FC8D29F3DB6500F5623B /* AKInjector.swift in Sources */,
 				CEB3FCCF29F4175300F5623B /* AKLocation.swift in Sources */,
 				CE58256329FE6B0100B3B395 /* CircularAnimation.swift in Sources */,
@@ -787,6 +886,7 @@
 				CE58255C29FE657600B3B395 /* AKTabBar.swift in Sources */,
 				CEB3FC5E29F3D6ED00F5623B /* SceneDelegate.swift in Sources */,
 				CEB3FCA129F3E0DA00F5623B /* AKResponseValidator.swift in Sources */,
+				CE45DFD62A06738900679AEA /* ExampleModel.swift in Sources */,
 				CEB3FCBA29F4005400F5623B /* AKThemeColorStyle.swift in Sources */,
 				CEB3FC9129F3DBC000F5623B /* AKUIService.swift in Sources */,
 				CEB3FCBC29F4041A00F5623B /* AKSessionCache.swift in Sources */,

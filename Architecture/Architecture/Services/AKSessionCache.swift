@@ -11,6 +11,8 @@ import UIKit
 let sessionCache = sharedInjector.sessionCache
 
 class AKSessionCache {
+    
+    var mTabbarController: AKTabBarController? = nil
 
     init() { debugPrint("init session cache") }
     

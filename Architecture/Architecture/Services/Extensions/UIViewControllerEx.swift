@@ -30,10 +30,10 @@ extension UIViewController {
     
     func statusBarColor(color: UIColor) {
         if #available(iOS 13.0, *) {
-            let statusBar = UIView(frame: appDelegate.window?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero)
+            let statusBar = UIView(frame: appDelegate.keyWindow?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero)
             statusBar.backgroundColor = color
             statusBar.tag = 100
-            appDelegate.window?.addSubview(statusBar)
+            appDelegate.keyWindow?.addSubview(statusBar)
         } else {
             let statusBar = appDelegate.value(forKeyPath: "statusBarWindow.statusBar") as? UIView
             statusBar?.backgroundColor = color
