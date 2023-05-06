@@ -29,7 +29,7 @@ class SelectionView: UIView {
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor.green.withAlphaComponent(0.3)
+        backgroundColor = UIColor.akGreen.withAlphaComponent(0.3)
     }
 
     required init?(coder aDecoder: NSCoder) {

@@ -125,7 +125,7 @@ class AKContainerViewController: AKNotificatedViewController {
             bottomButton.cornerRadius = bottomButton.frame.height / 2
             bottomButton.setTitle(AKLocalizedString("next", comment: ""), for: .normal)
             bottomButton.setTitleColor(.akBlack, for: .normal)
-            bottomButton.backgroundColor = .green
+            bottomButton.backgroundColor = .akGreen
             bottomButton.titleLabel?.font = .medium16
         }
     }
@@ -140,7 +140,7 @@ class AKContainerViewController: AKNotificatedViewController {
             bottom2Button.cornerRadius = bottom2Button.frame.height / 2
             bottom2Button.setTitle(AKLocalizedString("next", comment: ""), for: .normal)
             bottom2Button.setTitleColor(.akBlack, for: .normal)
-            bottom2Button.backgroundColor = .green
+            bottom2Button.backgroundColor = .akGreen
             bottom2Button.titleLabel?.font = .medium16
         }
     }
@@ -478,7 +478,7 @@ class AKContainerViewController: AKNotificatedViewController {
                 if self?.bottomButtonBackgroundColor == nil { self?.bottomButtonBackgroundColor = self?.bottomButton.backgroundColor }
                 if self?.bottomButtonHighlightBackgroundColor == nil { self?.bottomButtonHighlightBackgroundColor = self?.bottomButton.backgroundColor?.withAlphaComponent(0.3) }
                 let boolValue = boolValue ?? false
-                self?.bottomButton.backgroundColor = boolValue ? (self?.bottomButtonHighlightBackgroundColor ?? .green) : (self?.bottomButtonBackgroundColor ?? .green)
+                self?.bottomButton.backgroundColor = boolValue ? (self?.bottomButtonHighlightBackgroundColor ?? .akGreen) : (self?.bottomButtonBackgroundColor ?? .akGreen)
                 self?.bottomButton.titleLabel?.alpha = 1
             })
             .disposed(by: disposeBag)

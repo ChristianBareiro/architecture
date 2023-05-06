@@ -47,6 +47,16 @@
             </objects>
             <point key="canvasLocation" x="-1650" y="-1025"/>
         </scene>
+        <!--FirstTab-->
+        <scene sceneID="F8b-j7-8ON">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FirstTab" id="deJ-uz-tWR" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zBN-8g-xQk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gO2-dU-Dq7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3437" y="-2128"/>
+        </scene>
         <!--Item-->
         <scene sceneID="nZB-cP-K9j">
             <objects>
@@ -56,6 +66,9 @@
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="deJ-uz-tWR" kind="relationship" relationship="rootViewController" id="2uU-oI-TXI"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STE-Vk-h5r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -318,6 +331,16 @@
             </objects>
             <point key="canvasLocation" x="-1651" y="-283"/>
         </scene>
+        <!--SecondTab-->
+        <scene sceneID="CLc-Q3-UJL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SecondTab" id="uGd-4J-VUD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="b9l-e0-LCY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xq6-Ds-PjB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2535" y="-2128"/>
+        </scene>
         <!--Item-->
         <scene sceneID="RnF-dv-Kap">
             <objects>
@@ -327,6 +350,9 @@
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="uGd-4J-VUD" kind="relationship" relationship="rootViewController" id="0eh-Bj-8B4"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSf-C2-Ddf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -341,10 +367,23 @@
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="9Wu-Xk-oaG" kind="relationship" relationship="rootViewController" id="PKH-vT-atu"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6c-1o-D2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-805" y="-1709"/>
+        </scene>
+        <!--FifthTab-->
+        <scene sceneID="hqR-rv-VHa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FifthTab" id="aYC-pU-oEx" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CfH-kL-V7P"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akU-C4-dQJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="-2128"/>
         </scene>
         <!--Item-->
         <scene sceneID="QUC-hU-xAo">
@@ -355,6 +394,9 @@
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="aYC-pU-oEx" kind="relationship" relationship="rootViewController" id="nYq-eI-xf8"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L5G-kB-E21" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -369,10 +411,33 @@
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="DV3-kR-qIa" kind="relationship" relationship="rootViewController" id="nMs-lu-kj0"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MjS-oZ-jaP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1651" y="-1709"/>
+        </scene>
+        <!--ThirdTab-->
+        <scene sceneID="AaT-Mx-cKD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ThirdTab" id="DV3-kR-qIa" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0Pl-Op-d5x"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZl-QF-x27" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1651" y="-2128"/>
+        </scene>
+        <!--FourthTab-->
+        <scene sceneID="l1m-RO-1vC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FourthTab" id="9Wu-Xk-oaG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="16U-IW-YX6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vK3-56-rFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-805" y="-2128"/>
         </scene>
     </scenes>
     <resources>

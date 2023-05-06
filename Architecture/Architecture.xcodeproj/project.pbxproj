@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		4DF917C5BF9D55FFA35D401F /* Pods_Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4C9297027C8F54C243F98B /* Pods_Architecture.framework */; };
 		A46AF6762F48592B1C78F13F /* Pods_ArchitectureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DECFA8FE4588B3A899D39E /* Pods_ArchitectureTests.framework */; };
+		CE45DFB32A06495600679AEA /* FirstTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE45DFB22A06495600679AEA /* FirstTab.storyboard */; };
+		CE45DFB52A06496C00679AEA /* SecondTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE45DFB42A06496C00679AEA /* SecondTab.storyboard */; };
+		CE45DFB72A06497900679AEA /* ThirdTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE45DFB62A06497900679AEA /* ThirdTab.storyboard */; };
+		CE45DFB92A06498600679AEA /* FourthTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE45DFB82A06498600679AEA /* FourthTab.storyboard */; };
+		CE45DFBB2A06499600679AEA /* FifthTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE45DFBA2A06499600679AEA /* FifthTab.storyboard */; };
 		CE58253C29FE52D400B3B395 /* AKLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58253B29FE52D400B3B395 /* AKLanguageManager.swift */; };
 		CE58253E29FE544E00B3B395 /* AKLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58253D29FE544E00B3B395 /* AKLanguage.swift */; };
 		CE58254029FE54D400B3B395 /* AKLocaleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58253F29FE54D400B3B395 /* AKLocaleManager.swift */; };
@@ -113,6 +118,11 @@
 		851E5540AF334E285931FED5 /* Pods-Architecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Architecture.release.xcconfig"; path = "Target Support Files/Pods-Architecture/Pods-Architecture.release.xcconfig"; sourceTree = "<group>"; };
 		8A28065B8F1F54DF607DB4CC /* Pods-ArchitectureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectureTests.release.xcconfig"; path = "Target Support Files/Pods-ArchitectureTests/Pods-ArchitectureTests.release.xcconfig"; sourceTree = "<group>"; };
 		BA4C9297027C8F54C243F98B /* Pods_Architecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Architecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE45DFB22A06495600679AEA /* FirstTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstTab.storyboard; sourceTree = "<group>"; };
+		CE45DFB42A06496C00679AEA /* SecondTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondTab.storyboard; sourceTree = "<group>"; };
+		CE45DFB62A06497900679AEA /* ThirdTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdTab.storyboard; sourceTree = "<group>"; };
+		CE45DFB82A06498600679AEA /* FourthTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FourthTab.storyboard; sourceTree = "<group>"; };
+		CE45DFBA2A06499600679AEA /* FifthTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FifthTab.storyboard; sourceTree = "<group>"; };
 		CE58253B29FE52D400B3B395 /* AKLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLanguageManager.swift; sourceTree = "<group>"; };
 		CE58253D29FE544E00B3B395 /* AKLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLanguage.swift; sourceTree = "<group>"; };
 		CE58253F29FE54D400B3B395 /* AKLocaleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLocaleManager.swift; sourceTree = "<group>"; };
@@ -363,6 +373,11 @@
 				CEB3FC5F29F3D6ED00F5623B /* ViewController.swift */,
 				CEB3FC6429F3D6F000F5623B /* Assets.xcassets */,
 				CEB3FC6129F3D6ED00F5623B /* Main.storyboard */,
+				CE45DFB22A06495600679AEA /* FirstTab.storyboard */,
+				CE45DFB42A06496C00679AEA /* SecondTab.storyboard */,
+				CE45DFB62A06497900679AEA /* ThirdTab.storyboard */,
+				CE45DFB82A06498600679AEA /* FourthTab.storyboard */,
+				CE45DFBA2A06499600679AEA /* FifthTab.storyboard */,
 				CEB3FC6629F3D6F000F5623B /* LaunchScreen.storyboard */,
 				CEB3FC6929F3D6F000F5623B /* Info.plist */,
 			);
@@ -627,15 +642,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE45DFB72A06497900679AEA /* ThirdTab.storyboard in Resources */,
 				CE58258A29FE7E9F00B3B395 /* AlignmentHeader.xib in Resources */,
 				CE58259129FE7E9F00B3B395 /* Header.xib in Resources */,
 				CE58258D29FE7E9F00B3B395 /* EmptyHeader.xib in Resources */,
 				CE58255B29FE657600B3B395 /* AKTabBar.xib in Resources */,
 				CEB3FC6829F3D6F000F5623B /* LaunchScreen.storyboard in Resources */,
+				CE45DFB92A06498600679AEA /* FourthTab.storyboard in Resources */,
 				CE58258F29FE7E9F00B3B395 /* ButtonHeader.xib in Resources */,
+				CE45DFB32A06495600679AEA /* FirstTab.storyboard in Resources */,
 				CE58259329FE7E9F00B3B395 /* SeparatorHeader.xib in Resources */,
+				CE45DFBB2A06499600679AEA /* FifthTab.storyboard in Resources */,
 				CEB3FC6529F3D6F000F5623B /* Assets.xcassets in Resources */,
 				CE58258C29FE7E9F00B3B395 /* CollectionTitledHeader.xib in Resources */,
+				CE45DFB52A06496C00679AEA /* SecondTab.storyboard in Resources */,
 				CEB3FC6329F3D6ED00F5623B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

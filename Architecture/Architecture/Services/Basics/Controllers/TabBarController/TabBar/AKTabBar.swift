@@ -34,7 +34,7 @@ class AKTabBar: UIView {
         didSet {
             lineIndicatorView.frame = CGRect(origin: .zero, size: CGSize(width: UIScreen.main.bounds.width / 5, height: 5))
             lineIndicatorView.cornerRadius = 2
-            lineIndicatorView.backgroundColor = .green
+            lineIndicatorView.backgroundColor = .akGreen
         }
     }
     private var names: [Int: String] = [100: AKLocalizedString("first", comment: ""),
@@ -72,9 +72,9 @@ class AKTabBar: UIView {
     }
     
     private func selectedAt(index: Int) {
-        let defColor: UIColor = .black
+        let defColor: UIColor = .akBlack
         let defGrayColor: UIColor = .gray
-        let appColor: UIColor = .green
+        let appColor: UIColor = .akGreen
         stackView.subviews.forEach { view in
             let label = view.viewWithTag(view.tag * 100) as? UILabel
             let imageView = view.viewWithTag(view.tag * 10) as? UIImageView
@@ -83,7 +83,7 @@ class AKTabBar: UIView {
             var frame = lineIndicatorView.frame
             if view.tag == index {  frame.origin.x = view.frame.origin.x }
             UIView.animate(withDuration: 0.3) {
-                label?.textColor = view.tag == index ? .green : defColor
+                label?.textColor = view.tag == index ? .akGreen : defColor
                     imageView?.tintColor = view.tag == index ? appColor : defGrayColor
                 self.lineIndicatorView.frame = frame
             }

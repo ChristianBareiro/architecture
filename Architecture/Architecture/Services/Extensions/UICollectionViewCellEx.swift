@@ -51,7 +51,7 @@ class AKCollectionViewCell: UICollectionViewCell {
     
     func animateSelection(sender: UIView, block: @escaping () -> ()) {
         UIView.animate(withDuration: 0.3, animations: {
-            sender.backgroundColor = UIColor.green.withAlphaComponent(0.3)
+            sender.backgroundColor = UIColor.akGreen.withAlphaComponent(0.3)
         }) { _ in
             block()
             UIView.animate(withDuration: 0.3, animations: {

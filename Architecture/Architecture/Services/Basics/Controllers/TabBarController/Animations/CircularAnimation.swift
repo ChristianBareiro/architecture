@@ -39,7 +39,7 @@ class CircularAnimation: AKAnimation {
 
         let bezierPath = UIBezierPath()
 
-        layer.strokeColor = UIColor.green.cgColor
+        layer.strokeColor = UIColor.akGreen.cgColor
         layer.fillColor = UIColor.clear.cgColor
         layer.lineWidth = lineWidth
 

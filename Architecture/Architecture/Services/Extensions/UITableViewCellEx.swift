@@ -55,7 +55,7 @@ class AKTableViewCell: UITableViewCell {
     
     func animateSelection(sender: UIView, block: @escaping () -> ()) {
         UIView.animate(withDuration: 0.3, animations: {
-            sender.backgroundColor = UIColor.green.withAlphaComponent(0.3)
+            sender.backgroundColor = UIColor.akGreen.withAlphaComponent(0.3)
         }) { _ in
             block()
             UIView.animate(withDuration: 0.3, animations: {
@@ -73,7 +73,7 @@ class AKTableViewCell: UITableViewCell {
         if let indicatorButton = subviews.compactMap({ $0 as? UIButton }).last {
             let image = indicatorButton.backgroundImage(for: .normal)?.withRenderingMode(.alwaysTemplate)
             indicatorButton.setBackgroundImage(image, for: .normal)
-            indicatorButton.tintColor = .green
+            indicatorButton.tintColor = .akGreen
         }
     }
     
