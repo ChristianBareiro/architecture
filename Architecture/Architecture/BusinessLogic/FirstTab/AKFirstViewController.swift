@@ -44,18 +44,35 @@ enum FakeData: CaseIterable, SimpleValueProtocol {
         }
     }
     
+    var anyObject: Any? {
+        switch self {
+        case .first: return UIColor.red
+        case .second: return UIColor.blue
+        case .third: return UIColor.black
+        case .fourth: return UIColor.brown
+        case .fifth: return UIColor.purple
+        }
+    }
+    
 }
 
 class TableExampleInfo: Info {
     
-    init(array: [SimpleValueProtocol]) {
+    init(array: [SimpleValueProtocol], canLoadMore: Bool = false) {
         super.init()
         sectionInfo = [mySection(array: array)]
+        if canLoadMore { sectionInfo.append(loaderSection) }
     }
     
     private func mySection(array: [SimpleValueProtocol]) -> HFSuperClass {
         var section = HFSuperClass()
         section.data = array.map { CellSuperClass(id: .textWithImage, object: $0) }
+        return section
+    }
+    
+    private var loaderSection: HFSuperClass {
+        var section = HFSuperClass()
+        section.data = [CellSuperClass(id: .preloader)]
         return section
     }
     

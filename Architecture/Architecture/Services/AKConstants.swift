@@ -29,6 +29,7 @@ var kSafeBottomInset: CGFloat { safeAreaInsets.bottom }
 let kFakeInfiniteValue: Int = 10000
 
 let kAPIRequestRef = "request_ref"
+let kPreloader = "activity_indicator"
 
 var isReleaseAPI: Bool = false
 

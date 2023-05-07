@@ -21,6 +21,12 @@
 		CE45DFD22A06719A00679AEA /* TextImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45DFD02A06719A00679AEA /* TextImageCollectionCell.swift */; };
 		CE45DFD32A06719A00679AEA /* TextImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE45DFD12A06719A00679AEA /* TextImageCollectionCell.xib */; };
 		CE45DFD62A06738900679AEA /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45DFD52A06738900679AEA /* ExampleModel.swift */; };
+		CE45DFD82A06BA4500679AEA /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45DFD72A06BA4500679AEA /* ExampleViewModel.swift */; };
+		CE45DFDB2A07978700679AEA /* PreloaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45DFD92A07978700679AEA /* PreloaderCell.swift */; };
+		CE45DFDC2A07978700679AEA /* PreloaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE45DFDA2A07978700679AEA /* PreloaderCell.xib */; };
+		CE45DFE02A079CA800679AEA /* ExampleDBProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45DFDF2A079CA800679AEA /* ExampleDBProtocol.swift */; };
+		CE45DFE22A079CC900679AEA /* ExampleDBObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45DFE12A079CC900679AEA /* ExampleDBObject.swift */; };
+		CE45DFE42A079CEF00679AEA /* AKDBSuperObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45DFE32A079CEF00679AEA /* AKDBSuperObject.swift */; };
 		CE58253C29FE52D400B3B395 /* AKLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58253B29FE52D400B3B395 /* AKLanguageManager.swift */; };
 		CE58253E29FE544E00B3B395 /* AKLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58253D29FE544E00B3B395 /* AKLanguage.swift */; };
 		CE58254029FE54D400B3B395 /* AKLocaleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58253F29FE54D400B3B395 /* AKLocaleManager.swift */; };
@@ -137,6 +143,12 @@
 		CE45DFD02A06719A00679AEA /* TextImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextImageCollectionCell.swift; sourceTree = "<group>"; };
 		CE45DFD12A06719A00679AEA /* TextImageCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextImageCollectionCell.xib; sourceTree = "<group>"; };
 		CE45DFD52A06738900679AEA /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
+		CE45DFD72A06BA4500679AEA /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
+		CE45DFD92A07978700679AEA /* PreloaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderCell.swift; sourceTree = "<group>"; };
+		CE45DFDA2A07978700679AEA /* PreloaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreloaderCell.xib; sourceTree = "<group>"; };
+		CE45DFDF2A079CA800679AEA /* ExampleDBProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDBProtocol.swift; sourceTree = "<group>"; };
+		CE45DFE12A079CC900679AEA /* ExampleDBObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDBObject.swift; sourceTree = "<group>"; };
+		CE45DFE32A079CEF00679AEA /* AKDBSuperObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKDBSuperObject.swift; sourceTree = "<group>"; };
 		CE58253B29FE52D400B3B395 /* AKLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLanguageManager.swift; sourceTree = "<group>"; };
 		CE58253D29FE544E00B3B395 /* AKLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLanguage.swift; sourceTree = "<group>"; };
 		CE58253F29FE54D400B3B395 /* AKLocaleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKLocaleManager.swift; sourceTree = "<group>"; };
@@ -260,7 +272,7 @@
 		CE45DFBC2A0660D600679AEA /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
-				CE45DFD42A06736300679AEA /* Models */,
+				CE45DFD42A06736300679AEA /* Example */,
 				CE45DFC12A06611400679AEA /* FifthTab */,
 				CE45DFC02A06610C00679AEA /* FourthTab */,
 				CE45DFBF2A06610500679AEA /* ThirdTab */,
@@ -312,6 +324,8 @@
 			children = (
 				CE45DFCC2A0668F500679AEA /* TextImageCell.swift */,
 				CE45DFCD2A0668F500679AEA /* TextImageCell.xib */,
+				CE45DFD92A07978700679AEA /* PreloaderCell.swift */,
+				CE45DFDA2A07978700679AEA /* PreloaderCell.xib */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -325,12 +339,29 @@
 			path = CollectionCells;
 			sourceTree = "<group>";
 		};
-		CE45DFD42A06736300679AEA /* Models */ = {
+		CE45DFD42A06736300679AEA /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				CE45DFD52A06738900679AEA /* ExampleModel.swift */,
+				CE45DFD72A06BA4500679AEA /* ExampleViewModel.swift */,
 			);
-			path = Models;
+			path = Example;
+			sourceTree = "<group>";
+		};
+		CE45DFDD2A079C7400679AEA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CE45DFDF2A079CA800679AEA /* ExampleDBProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CE45DFDE2A079C7E00679AEA /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				CE45DFE12A079CC900679AEA /* ExampleDBObject.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 		CE58253A29FE528F00B3B395 /* Language */ = {
@@ -514,6 +545,9 @@
 			isa = PBXGroup;
 			children = (
 				CEB3FC8E29F3DB8600F5623B /* AKDBService.swift */,
+				CE45DFE32A079CEF00679AEA /* AKDBSuperObject.swift */,
+				CE45DFDE2A079C7E00679AEA /* Objects */,
+				CE45DFDD2A079C7400679AEA /* Protocols */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
@@ -747,6 +781,7 @@
 				CE45DFB32A06495600679AEA /* FirstTab.storyboard in Resources */,
 				CE58259329FE7E9F00B3B395 /* SeparatorHeader.xib in Resources */,
 				CE45DFCF2A0668F500679AEA /* TextImageCell.xib in Resources */,
+				CE45DFDC2A07978700679AEA /* PreloaderCell.xib in Resources */,
 				CE45DFBB2A06499600679AEA /* FifthTab.storyboard in Resources */,
 				CEB3FC6529F3D6F000F5623B /* Assets.xcassets in Resources */,
 				CE58258C29FE7E9F00B3B395 /* CollectionTitledHeader.xib in Resources */,
@@ -841,6 +876,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEB3FC8F29F3DB8600F5623B /* AKDBService.swift in Sources */,
+				CE45DFE02A079CA800679AEA /* ExampleDBProtocol.swift in Sources */,
 				CEB3FCB829F3FFF000F5623B /* AKThemeManager.swift in Sources */,
 				CE58257729FE770C00B3B395 /* AKValidator.swift in Sources */,
 				CEB3FCB629F3FC8700F5623B /* AKDataResponse.swift in Sources */,
@@ -866,6 +902,7 @@
 				CE58257C29FE7D9C00B3B395 /* AKHeader.swift in Sources */,
 				CE58257329FE763F00B3B395 /* UITableViewCellEx.swift in Sources */,
 				CEB3FCCA29F4102A00F5623B /* AKThemeFontStyle.swift in Sources */,
+				CE45DFE42A079CEF00679AEA /* AKDBSuperObject.swift in Sources */,
 				CEB3FCB029F3E9BD00F5623B /* CodableEx.swift in Sources */,
 				CE58256E29FE6F6400B3B395 /* AKCollectionConstructor.swift in Sources */,
 				CEB3FC9729F3DC8F00F5623B /* AKBaseViewModel.swift in Sources */,
@@ -876,6 +913,7 @@
 				CE58255429FE633B00B3B395 /* AKTabbarController.swift in Sources */,
 				CEB3FCC829F40F7700F5623B /* AKFontManager.swift in Sources */,
 				CE45DFC32A0665FE00679AEA /* AKFirstViewController.swift in Sources */,
+				CE45DFE22A079CC900679AEA /* ExampleDBObject.swift in Sources */,
 				CE45DFD22A06719A00679AEA /* TextImageCollectionCell.swift in Sources */,
 				CEB3FC8D29F3DB6500F5623B /* AKInjector.swift in Sources */,
 				CEB3FCCF29F4175300F5623B /* AKLocation.swift in Sources */,
@@ -884,6 +922,7 @@
 				CEB3FC5C29F3D6ED00F5623B /* AppDelegate.swift in Sources */,
 				CE58255029FE609D00B3B395 /* AKNotificatedViewController.swift in Sources */,
 				CE58255C29FE657600B3B395 /* AKTabBar.swift in Sources */,
+				CE45DFDB2A07978700679AEA /* PreloaderCell.swift in Sources */,
 				CEB3FC5E29F3D6ED00F5623B /* SceneDelegate.swift in Sources */,
 				CEB3FCA129F3E0DA00F5623B /* AKResponseValidator.swift in Sources */,
 				CE45DFD62A06738900679AEA /* ExampleModel.swift in Sources */,
@@ -904,6 +943,7 @@
 				CE58256829FE6E0E00B3B395 /* UIScrollViewEx.swift in Sources */,
 				CE58256F29FE6F6400B3B395 /* AKTableConstructor.swift in Sources */,
 				CEB3FCC229F409A700F5623B /* AKThemeImageStyle.swift in Sources */,
+				CE45DFD82A06BA4500679AEA /* ExampleViewModel.swift in Sources */,
 				CE58253E29FE544E00B3B395 /* AKLanguage.swift in Sources */,
 				CE58256129FE6B0100B3B395 /* SimpleAnimation.swift in Sources */,
 				CEB3FCB229F3EA8700F5623B /* AKRouter.swift in Sources */,

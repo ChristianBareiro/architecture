@@ -1,5 +1,14 @@
 import UIKit
 
+// if you don't want to separate table cells from collection cells
+// you can create container for each cell, like stackview or smth
+// and work with views, it will universal decision
+// smth like this
+// UICollectionViewCell(your_container) -> YOURVIEW
+// UITableViewCell(your_container) -> YOURVIEW
+// in this case YOURVIEW - can be successfully implemented in
+// both collection and table cells
+
 enum AKIdentifier: String {
     
     // table cells
